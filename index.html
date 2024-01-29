@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hanged</title>
+    
+</head>
+<body>
+    <header>
+<h3>Futuro Ahorcado!!!!!!!</h3>
+    </header>
+    <main>
+<H1>este proyecto sera un ahorcado. crees que puedes sobrevivir???? JAJAJA</H1>
+        <h2>Ingrese una letra!!!!!!</h2>
+        <h2>Si no le acertaste, te dira si estas antes o después en el abecedario</h2>
+        <h2>podrás jugar hasta que le aciertes</h2>
+        <h2>Al acertar, te dira la letra y la cantidad de intentos</h2>
+        <h2>Escriba SI/NO para reiniciar y continuar calculando</h2>
+
+       
+        <input type="button" onclick="juego()" value="INICIAR YA!!!!!!">
+
+        <script>
+            function juego(){
+                                            do{
+                            let adivinanza;
+                            let intentos=0;
+                            const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+                            const LETRA_SECRETA = alphabet[Math.floor(Math.random() * alphabet.length)];
+
+
+                            while (adivinanza!==LETRA_SECRETA){
+                                adivinanza=(prompt("adivina una letra desde la A a la Z: ").toLowerCase());
+                                intentos++;
+                                if(adivinanza>LETRA_SECRETA){
+                                    alert("está antes en el abecedario");
+                                }else if(adivinanza<LETRA_SECRETA){
+                                    alert("está después en el abecedario");
+                                }
+
+                            else{alert("adivinaste la letra secreta: "+LETRA_SECRETA+ " en "+ intentos);}
+                            }
+                            continuar=prompt("desea continuar? SI/NO").toLowerCase();
+
+                            }
+                            while  (continuar==="si");
+            }
+        </script>
+    </main>
+    <footer>
+        
+    </footer>    
+</body>
+</html>
