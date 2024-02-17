@@ -8,11 +8,45 @@
 </head>
 <body>
     <header>
-        <h3>Calculador de cuotas</h3>
+        <ul>
+          <a href="#us">Nosotros</a>
+        </ul>
+        <ul>
+          <a href="#cargarNuevo">Cargas Nuevas</a>
+        </ul>
+        <ul>
+          <a href="#tot">Totalizador</a>
+        </ul>
+        <ul>
+          <input
+            type="barraBusqueda"
+            placeholder="buscar por nombre"
+            id="barraBusqueda1"
+          />
+        </ul>
+        <ul>
+          <input type="button" value="Buscar" id="btnBuscar" />
+        </ul>
+        <ul>
+          <input type="button" value="Limpiar" id="btnLimpiar" />
+        </ul>
+        <ul>
+          <input type="button" value="Ingresar" id="btnIngresar" />
+        </ul>
+        <ul>
+          <input
+            type="button"
+            value="Registrarse"
+            id="btnRegistrar"
+            style="background-color: aqua; font: bold"
+          />
+        </ul>
     </header>
     <main>
-        <H1>Queres comprar y no perder??</H1>
-        <h1> te daremos los montos a pagar en cada cuota según sistema francés</h1>
+        <div>
+            <H1>Queres comprar y no perder??</H1>
+            <h1> te daremos los montos a pagar en cada cuota según sistema francés</h1>
+        </div>
         <div class="intro">
             <h2 class="center">Ingresa tu nombre</h2>
             <input type="text" name="Nombre" id="Nombre" />
@@ -26,11 +60,11 @@
             <h2 class="center">Ingresa las cuotas que queres</h2>
             <input type="text" name="Cantidad" id="Cantidad" />
         </div>
-        <input type="button" onclick="usuario()" value="Agregar nuevo usuario">
-        <input type="button" onclick="calcularCuotas()" value="Calcular cuotas del ultimo usuario">
-        <input type="button" onclick="calcularCuotasTodos()" value="Mostrar todos los casos">
-        <script src="./JS/index.js">       
-        </script>
+        <div>
+        <input type="button" onclick="usuario()" value="Calcular este caso">
+        <input type="button" onclick="calcularCuotasTodos()" value="Mostrar todos los casos anteriores">
+        </div>
+        <script src="./JS/index.js"></script>
     </main>
     <footer>
         
