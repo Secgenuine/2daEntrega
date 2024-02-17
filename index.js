@@ -24,11 +24,11 @@ let usuarios=[
 console.log(usuarios);
 
 function usuario(nombre, monto, cuotas, tasa){
-
-this.nombre=(prompt("Ingrese su nombre").toLowerCase());
-this.monto=(prompt("ingrese el monto del bien a comprar").toLowerCase());
-this.cuotas=(prompt("ingrese cantidad de cuotas").parseInt);
-this.tasa=(prompt("ingrese la tasa de interés anual").parseFloat);
-
-usuario (NOMBRE, MONTO, CUOTAS, TASA);
+this.nombre=nombre;
+this.monto=monto;
+this.cuotas=cuotas;
+this.tasa=tasa;
 }
+
+
+
